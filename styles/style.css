@@ -121,9 +121,8 @@ body {
     margin-right: 30px;
 }
 
-.play img {
-    width: 20px;
-    height: 20px;
+.header-btns img{
+    margin-right: 9px;
 }
 .header-link {
     color:#FF9900;
