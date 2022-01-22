@@ -28,6 +28,9 @@ body {
     padding: 45px 0 24px ;
 } 
 
+.nav-bar {
+    overflow: hidden;
+}
 .nav{
     float: right;
     overflow: hidden;
