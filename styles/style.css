@@ -15,33 +15,34 @@ body {
     margin: 0 auto;
 }
 
-.hdr .container {
-    overflow: hidden;
+.container .flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo-holder {
-    float: left;
+    justify-content: flex-start;
     max-width: 185px;
-}
-
-.logo-holder {
     padding: 45px 0 24px ;
-} 
-
-.nav-bar {
-    overflow: hidden;
 }
+
 .nav{
-    float: right;
-    overflow: hidden;
+    justify-content: flex-end;
     padding: 44px 0 26px;
 }
 
+.nav-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     list-style: none;
-    margin: 0 60px 0;
-    padding: 10px 0;
-    float: left;
 }
 
 .nav-item {
@@ -57,9 +58,10 @@ body {
 }
 
 .btn-list {
-    list-style: none;
-    padding: 0;
-    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;    
 }
 
 .btn-list li {
@@ -76,7 +78,6 @@ body {
     font-weight: 600;
     font-size: 16px;
     color: #173A56;
-
 }
 
 .btn-orange {
@@ -100,12 +101,13 @@ body {
     line-height: 26px;
 }
 
-.header .side-part, .image-holder {
-    float: left;
+.hero-section .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-.header .side-part{
-    max-width: 518px;
+.hero-section .side-part{
     width: 100%;
     padding: 83px 0 80px;
 }
@@ -117,14 +119,13 @@ body {
     margin-bottom: 30px;
 }
 
-.header .side-text {
-    max-width: 458px;
+.hero-section .side-text {
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 45px;
 }
 
-.header .orange-btn {
+.hero-section .orange-btn {
     border: 1px solid #FF9900;
     border-radius: 4px;
     background-color: #FF9900;
@@ -136,15 +137,27 @@ body {
     margin-right: 30px;
 }
 
-.header-btns img{
+.hero-section-btns img{
     margin-right: 9px;
 }
-.header-link {
+.hero-section-btns a {
     color:#FF9900;
     font-size: 16px;
     font-weight: 600;
 }
 
-.header {
+.hero-section {
     margin-bottom: 111px;
+}
+
+.feature .section-title {
+    text-align: center;
+    font-size: 36px;
+    color:#2F281E;
+    max-width:  539px;
+}
+
+.feature .flex-container {
+    display: flex;
+    justify-content: space-between;
 }
