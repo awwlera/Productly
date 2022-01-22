@@ -151,7 +151,7 @@ body {
 }
 
 .feature .section-title {
-    text-align: center;
+    margin: 0 auto;
     font-size: 36px;
     color:#2F281E;
     max-width:  539px;
