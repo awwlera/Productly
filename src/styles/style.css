@@ -122,6 +122,31 @@ body {
     margin-bottom: 45px;
 }
 
+.hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 366px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-btns .btn-orange {
+    font-weight: bold;
+    padding: 15px 41px;
+    margin-right: 30px;
+}
+
+.hero-btns .image-holder {
+    display: inline-block;
+    margin-right: 9px;
+}
+
+.hero-btns .hero-link {
+    color: #FF9900;
+    font-weight: 600;
+    font-size: 16px;
+}
+
 .hero-section {
     margin-bottom: 111px;
 }
