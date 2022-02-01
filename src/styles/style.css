@@ -73,22 +73,22 @@ main {
     max-width: 185px;
 }
 
-.header .nav{
+.nav__link {
+    text-decoration: none;
+    color:#2F281E;
+    font-size: 14px;
+}
+
+.header__nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
 }
 
-.header .nav__item {
+.header__nav-item {
     display: inline-block;
     padding-right:25px;
-}
-
-.nav__link {
-    text-decoration: none;
-    color:#2F281E;
-    font-size: 14px;
 }
 
 .header__btn-list {
@@ -281,8 +281,6 @@ main {
     top: 33%;
     left: 2%;
     transform: rotate(-50.8deg);
-
-
 }
 
 .marketers {
