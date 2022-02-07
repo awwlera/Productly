@@ -1,0 +1,133 @@
+*, 
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poppins,sans-serif;
+    font-size: $font-size-global;
+    line-height: $line-height;
+    color: $black-light;
+    font-weight: 500;   
+}
+
+main {
+    padding-top: 140px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title {
+    margin: 0 auto;
+    font-size: $font-size-section-title;
+    line-height: $line-height-section;
+    color: $black;
+}
+
+.side-part,
+.image-holder {
+    width: 50%;
+    padding-right: 30px;
+}
+
+.image-holder {
+    padding-right: 0;
+}
+
+.logo {
+    justify-content: flex-start;
+    align-items: center;
+
+    &__img {
+        width: 100%;
+        max-width: 185px;
+    }
+}
+
+.nav__link {
+    text-decoration: none;
+    color: $black;
+    font-size: 14px;
+}
+
+.btn {
+    display: block;
+    padding: 11px 23px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+
+    &_white {
+        border: 1px solid #BCD0E5;
+        color: #173A56;
+        background-color: $white;
+    }
+
+    &_orange {
+        background-color: $orange;
+        border: 1px solid $orange;
+        color: $white;
+    }
+}
+
+.column {
+    width: 100%;
+    max-width: 240px;
+
+    &__img-holder {
+        margin-bottom: 30px;
+    }
+
+    &__sub-title {
+        color: $black;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 13px;    
+    }
+}
+
+.form {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__input {
+        border: 1px solid #BCD0E5;
+        border-radius: 4px;
+        width: 100%;
+        width: 325px;
+        height: 48px;
+        margin-bottom: 21px;
+    }
+
+    .btn_orange {
+        font-weight: bold;
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}

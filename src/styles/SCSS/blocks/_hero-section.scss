@@ -1,0 +1,48 @@
+.hero-section {
+    margin-bottom: 111px;
+
+    &__title {
+        font-size: 44px;
+        line-height: 54px;
+        color: $black;
+        margin: 0 0 30px;
+    }
+
+    &__btn-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__link {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        color: $orange;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    &__play-btn {
+        margin-right: 8px;
+    }
+
+    .text-holder {
+        width: 100%;
+        max-width: 460px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 45px;
+    }
+
+    .btn_orange {
+        display: block;
+        font-weight: bold;
+        padding: 15px 40px;
+        margin-right: 30px;
+    }
+}

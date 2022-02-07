@@ -1,0 +1,41 @@
+.header {
+    width: 100%;
+    padding-top: 35px;
+    margin-bottom: 47px;
+    background-color: rgba(255, 255, 255, .97);
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    z-index: 5;
+
+    &__nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 15px;
+    }
+
+    &__nav-item {
+        display: inline-block;
+        padding-right:25px;
+    }
+
+    &__btn-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;    
+    }
+
+    &__btn-item {
+        padding-right: 14px;
+    }
+}

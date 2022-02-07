@@ -1,0 +1,27 @@
+.design-tools {
+    margin-bottom: 210px;
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 34px;
+    }
+
+    .section-title {
+        max-width: 539px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 54px;
+    }
+
+    .btn_orange {
+        max-width: 175px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 700;
+        padding: 15px 32px;
+    }
+}

@@ -1,0 +1,36 @@
+.footer {
+    margin-bottom: 83px;
+
+    .container {
+        border-top: 1px solid rgba(188, 208, 229, 0.496913);
+        padding-top: 105px;
+    }
+
+    .flex-container {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    &__logo {
+        padding-bottom: 30px;
+    }
+
+    &__nav-list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 35px;
+        width: 247px;
+        padding-right: 20px;
+    }
+
+    &__nav-list_wide{
+        width: 213px;
+    }
+
+
+    &__nav-link {
+        text-decoration: none;
+        color: $black-light;
+    }
+}
