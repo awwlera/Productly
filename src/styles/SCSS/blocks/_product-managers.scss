@@ -1,6 +1,20 @@
 .product-managers {
     margin-bottom: 104px;
 
+    @include breakpoint(lg) {
+        margin-bottom: 80px;
+    }
+
+    @include breakpoint(md) {
+        margin-bottom: 60px;
+    }
+
+    @include breakpoint(md) {
+        margin-bottom: 10px;
+    }
+
+    
+
     &__list {
         list-style: none;
         margin: 0;
@@ -11,6 +25,21 @@
         padding-left: 65px;
         margin-bottom: 30px;
         position: relative;
+
+        @include breakpoint(xxl) {
+            font-size: 15px;
+            padding-left: 55px;
+        }
+
+        @include breakpoint(xl) {
+            font-size: 14px;
+            padding-left: 50px;
+        }
+
+        @include breakpoint(xs) {
+            font-size: 11px;
+            padding-left: 50px;
+        }
 
         &:before {
             content: '';
@@ -33,13 +62,34 @@
             border-left: 2px solid $white;
             width:15px;
             height: 8px;
-            top: 33%;
-            left: 2%;
+            top: 18px;
+            left: 10px;
             transform: rotate(-50.8deg);
+
+            @include breakpoint(sm) {
+                top: 8px;
+                left: 10px;
+            }
         }
     }
 
     .side-part {
         padding: 49px 0 45px 100px;
+
+        @include breakpoint(lg) {
+            padding: 49px 0 45px 63px;
+        }
+
+        @include breakpoint(md) {
+            padding: 49px 0 45px 40px; 
+        }
+
+        @include breakpoint(sm) {
+            padding: 49px 40px 45px 40px;
+        }
+
+        @include breakpoint(xs) {
+            padding: 49px 25px 0 25px;
+        }
     }
 }

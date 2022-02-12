@@ -7,3 +7,33 @@ $font-size-global: 16px;
 $line-height: 1.625;
 $font-size-section-title:36px;
 $line-height-section:54px;
+
+@mixin breakpoint($point) {
+    @if $point == xxl {
+        @media (max-width: 1200px) {@content;}
+    }
+
+    @if $point == xl {
+        @media (max-width: 1024px) {@content;}
+    }
+
+    @if $point == lg {
+        @media (max-width: 992px) {@content;}
+    }
+
+    @else if $point == md {
+        @media (max-width: 768px) {@content;}
+    }
+
+    @else if $point == sm {
+        @media (max-width: 640px) {@content;}
+    }
+
+    @else if $point == xs {
+        @media (max-width: 568px) {@content;}
+    }
+
+    @else if $point == xxs {
+        @media (max-width: 360px) {@content;}
+    }
+}
