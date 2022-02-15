@@ -1,19 +1,17 @@
 .product-managers {
     margin-bottom: 104px;
 
-    @include breakpoint(lg) {
+    @include breakpoint('lg') {
         margin-bottom: 80px;
     }
 
-    @include breakpoint(md) {
+    @include breakpoint('md') {
         margin-bottom: 60px;
     }
 
-    @include breakpoint(md) {
+    @include breakpoint('md') {
         margin-bottom: 10px;
     }
-
-    
 
     &__list {
         list-style: none;
@@ -25,21 +23,6 @@
         padding-left: 65px;
         margin-bottom: 30px;
         position: relative;
-
-        @include breakpoint(xxl) {
-            font-size: 15px;
-            padding-left: 55px;
-        }
-
-        @include breakpoint(xl) {
-            font-size: 14px;
-            padding-left: 50px;
-        }
-
-        @include breakpoint(xs) {
-            font-size: 11px;
-            padding-left: 50px;
-        }
 
         &:before {
             content: '';
@@ -66,8 +49,13 @@
             left: 10px;
             transform: rotate(-50.8deg);
 
-            @include breakpoint(sm) {
+            @include breakpoint('sm') {
                 top: 8px;
+                left: 10px;
+            }
+
+            @include breakpoint('xs') {
+                top: 20px;
                 left: 10px;
             }
         }
@@ -76,20 +64,26 @@
     .side-part {
         padding: 49px 0 45px 100px;
 
-        @include breakpoint(lg) {
+        @include breakpoint('lg') {
             padding: 49px 0 45px 63px;
         }
 
-        @include breakpoint(md) {
+        @include breakpoint('md') {
             padding: 49px 0 45px 40px; 
         }
 
-        @include breakpoint(sm) {
+        @include breakpoint('sm') {
             padding: 49px 40px 45px 40px;
         }
 
-        @include breakpoint(xs) {
+        @include breakpoint('xs') {
             padding: 49px 25px 0 25px;
+        }
+    }
+
+    .image-holder {
+        @include breakpoint('sm') {
+            order: 2;
         }
     }
 }

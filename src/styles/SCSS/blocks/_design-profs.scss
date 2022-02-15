@@ -1,22 +1,22 @@
 .design-profs {
     margin-bottom: 100px;
 
-    @include breakpoint(md) {
+    @include breakpoint('md') {
         margin-bottom: 50px;
     }
 
     .side-part {
         padding: 26px 90px 17px 0; 
         
-        @include breakpoint(lg) {
+        @include breakpoint('lg') {
             padding: 24px 50px 17px 0;
         }
 
-        @include breakpoint(md) {
+        @include breakpoint('md') {
             padding: 24px 25px 17px 0;
         }
 
-        @include breakpoint(xs) {
+        @include breakpoint('xs') {
             padding: 49px 20px 20px;
         }
     }

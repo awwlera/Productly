@@ -13,11 +13,11 @@ body {
     color: $black-light;
     font-weight: 500; 
     
-    @include breakpoint(xl) {
+    @include breakpoint('xl') {
         font-size: 15px;
     }
 
-    @include breakpoint(md) {
+    @include breakpoint('md') {
         font-size: 14px;
         line-height: 1.5;
     }
@@ -29,10 +29,15 @@ main {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 
-    @include breakpoint(sm) {
-        max-width: 70%;
+    @include breakpoint('sm') {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    @include breakpoint('xs') {
+        width: 100%;
         margin: 0 auto;
     }
 }
@@ -57,26 +62,25 @@ img {
     line-height: $line-height-section;
     color: $black;
 
-    @include breakpoint(xl) {
+    @include breakpoint('xl') {
         font-size: 34px;
     }
 
-    @include breakpoint(lg) {
+    @include breakpoint('lg') {
         font-size: 32px;
     }
 
-    @include breakpoint(md) {
+    @include breakpoint('md') {
         font-size: 28px;
+        line-height: 1.5;
     }
 
-    @include breakpoint(sm) {
+    @include breakpoint('sm') {
         font-size: 26px;
     }
 
-    @include breakpoint(xxs) {
+    @include breakpoint('xxs') {
         font-size: 24px;
-        line-height: 1.3;
-
     }
 }
 
@@ -85,7 +89,7 @@ img {
     width: 50%;
     padding-right: 30px;
 
-    @include breakpoint(sm) {
+    @include breakpoint('sm') {
         width: 100%;
     }   
 }
@@ -102,11 +106,11 @@ img {
         width: 100%;
         max-width: 185px;
 
-        @include breakpoint(xl) {
+        @include breakpoint('xl') {
             max-width: 180px;
         }
 
-        @include breakpoint(sm) {
+        @include breakpoint('sm') {
             max-width: 160px;
         }
     }
@@ -140,37 +144,22 @@ img {
 
 .column {
 
-    @include breakpoint(xl) {
+    @include breakpoint('xl') {
         max-width: 200px;
     }
 
-    @include breakpoint(lg) {
-        max-width: 48%;
-        padding: 40px;
-    }
-
-    @include breakpoint(md) {
-        max-width: 45%;
-        padding: 20px;
-    }
-
-    @include breakpoint(sm) {
-        max-width: 40%;
-        padding: 20px;
-    }
-
-    @include breakpoint(xs) {
-        max-width: 100%;
-        padding: 20px;
+    @include breakpoint('lg') {
+        max-width: 360px;
     }
 
     width: 100%;
     max-width: 240px;
+    padding: 20px;
 
     &__img-holder {
         margin-bottom: 30px; 
         
-        @include breakpoint(xxs) {
+        @include breakpoint('xxs') {
             margin-bottom: 20px;
 
         }
@@ -180,11 +169,11 @@ img {
         max-width: 50px;
         width: 100%;
 
-        @include breakpoint(md) {
+        @include breakpoint('md') {
             max-width: 45px;
         }
 
-        @include breakpoint(sm) {
+        @include breakpoint('sm') {
            margin: 0;
         }
     }
@@ -195,11 +184,11 @@ img {
         font-weight: 600;
         margin-bottom: 13px;
         
-        @include breakpoint(lg) {
+        @include breakpoint('lg') {
             font-size: 20px;
         }
 
-        @include breakpoint(md) {
+        @include breakpoint('md') {
             font-size: 18px;
         }
     }
@@ -223,20 +212,20 @@ img {
         height: 48px;
         margin-bottom: 21px;
 
-        @include breakpoint(xl) {
+        @include breakpoint('xl') {
             width: 300px;
         }
         
-        @include breakpoint(lg) {
+        @include breakpoint('lg') {
             width: 250px;
             height: 40px;
         }
 
-        @include breakpoint(md) {
-            max-width: 100%;
+        @include breakpoint('md') {
+            width: 100%;
         }
 
-        @include breakpoint(sm) {
+        @include breakpoint('sm') {
             width: 100%;
         }   
     }

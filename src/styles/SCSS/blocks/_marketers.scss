@@ -1,18 +1,18 @@
 .marketers {
     margin-bottom: 146px;
 
-    @include breakpoint(xl) {
+    @include breakpoint('xl') {
         margin-bottom: 100px;
     }
 
-    @include breakpoint(lg) {
+    @include breakpoint('lg') {
         margin-bottom: 80px;
     }
 
     .side-part {
         padding: 39px 82px 39px 0;
 
-        @include breakpoint(lg) {
+        @include breakpoint('lg') {
             padding: 39px 50px 39px 0;
         }
     }

@@ -9,27 +9,86 @@
     right:0;
     z-index: 5;
 
+    &.active {
+        .header__nav {
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .nav-opener {
+            span {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &::before {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &::after {
+                bottom: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+
     &__nav{
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
         align-items: center;
 
-        @include breakpoint(sm) {
-            display: none;
+        @include breakpoint('md') {
+            flex-direction: column;
+            position:absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 5;
+            background-color: rgba(255, 255, 255, .97);
+            transform: translateX(100%);
+            transition: all ease-in-out 0.3s;
+            opacity: 0;
+            visibility: hidden;
         }
     }
 
-    &__list {
+    &__nav-list {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         margin: 0 15px;
+
+        @include breakpoint('lg') {
+            padding: 0;
+        }
+
+        @include breakpoint('md') {
+            flex-direction: column;
+            margin: 0 0 20px;
+        }
     }
 
     &__nav-item {
         display: inline-block;
         padding-right:25px;
+
+        @include breakpoint('md') {
+            padding: 0;
+            width: 100%;
+        }
+
+        a {
+            @include breakpoint('md') {
+                text-align: center;
+                display: block;
+                padding: 20px 0;
+            }
+        }
     }
 
     &__nav-link {
@@ -40,10 +99,78 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        list-style: none;    
+        list-style: none; 
+        
+        @include breakpoint('md') {
+            padding: 0;
+            flex-direction: column;
+        }
     }
 
     &__btn-item {
         padding-right: 14px;
+
+        @include breakpoint('md') {
+           width: 100%;
+           margin: 0 0 20px;
+        }
     }
+
+    .nav-opener {
+        display: none;
+
+        @include breakpoint('md') {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            z-index: 6;
+        }
+
+        &::before {
+            content: '';
+            width: 40px;
+            height: 2px;
+            border-radius: 4px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $black;
+            transition: all ease-in-out 0.3s;
+        }
+
+        &:after {
+            content: '';
+            width: 40px;
+            height: 2px;
+            border-radius: 4px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $black;
+            transition: all ease-in-out 0.3s;
+        }
+
+        span {
+            width: 40px;
+            height: 2px;
+            border-radius: 4px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $black;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+
 }

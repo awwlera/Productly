@@ -1,15 +1,15 @@
 .design-tools {
     margin-bottom: 210px;
 
-    @include breakpoint(xl) {
+    @include breakpoint('xl') {
         margin-bottom: 100px;
     }
 
-    @include breakpoint(sm) {
+    @include breakpoint('sm') {
         margin-bottom: 60px;
     }
 
-    @include breakpoint(xxs) {
+    @include breakpoint('xxs') {
         margin-bottom: 40px;
 
     }
@@ -21,8 +21,12 @@
         align-items: flex-start;
         margin-bottom: 34px;
 
-        @include breakpoint(sm) {
-            margin-bottom: 20px;
+        @include breakpoint('md') {
+            justify-content: space-around;
+        }
+
+        @include breakpoint('sm') {
+            justify-content: center;
         }
     }
 
@@ -33,13 +37,12 @@
         text-align: center;
         padding-bottom: 54px;
 
-        @include breakpoint(md) {
+        @include breakpoint('md') {
             padding-bottom: 35px;
         }
 
-        @include breakpoint(xxs) {
-            margin-bottom: 20px;
-
+        @include breakpoint('xxs') {
+            padding-bottom: 20px;
         }
     }
 

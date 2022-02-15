@@ -5,11 +5,11 @@
         border-top: 1px solid rgba(188, 208, 229, 0.496913);
         padding-top: 105px;
 
-        @include breakpoint(xl) {
+        @include breakpoint('xl') {
             padding-top: 80px;
         }
 
-        @include breakpoint(lg) {
+        @include breakpoint('lg') {
             padding-top: 70px;
         }
     }
@@ -18,11 +18,11 @@
         justify-content: flex-end;
         align-items: flex-end;
 
-        @include breakpoint(md) {
+        @include breakpoint('md') {
             justify-content: flex-start;
         }
 
-        @include breakpoint(xs) {
+        @include breakpoint('xs') {
             justify-content: center;
         }
     }
@@ -33,11 +33,11 @@
     }
 
     &__nav {
-        @include breakpoint(md) {
+        @include breakpoint('md') {
             width: 30%;
         }
 
-        @include breakpoint(xs) {
+        @include breakpoint('xs') {
             width: 50%;
             margin-bottom: 20px;
         }
@@ -63,7 +63,7 @@
     }
 
     &__form {
-        @include breakpoint(xs) {
+        @include breakpoint('xs') {
             width: 100%;
         } 
     }
